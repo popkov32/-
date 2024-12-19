@@ -1,0 +1,21 @@
+2024-12-19 23:28:48,902 | WARNING | Неверный тип данных для объекта Runner
+2024-12-19 23:28:48,908 | WARNING | Traceback (most recent call last):
+  File "C:\Users\popko\PycharmProjects\M12\tests_12_4.py", line 106, in test_run
+    self.assertEqual( runner_1.distance, 100 )
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\popko\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 885, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\popko\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 878, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 100
+
+2024-12-19 23:28:48,910 | WARNING | Неверная скорость для Runner
+2024-12-19 23:28:48,911 | WARNING | Traceback (most recent call last):
+  File "C:\Users\popko\PycharmProjects\M12\tests_12_4.py", line 89, in test_walk
+    runner_1 = Runner( 'Den', speed=-3 )
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\popko\PycharmProjects\M12\tests_12_4.py", line 47, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -3
+
